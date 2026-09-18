@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fisica | Unità 01 | Carica elettrica e Coulomb | LIM</title>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'},options:{enableMenu:false}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+:root{--bg:#edf2f5;--paper:#fff;--ink:#162a36;--muted:#425c6d;--line:#bacbd5;--accent:#0a6785;--soft:#e3f4fa;--warm:#fff1d9;--good:#e4f4ed;--bad:#ffe8e4;--shadow:0 8px 26px #19313d16}
+body.dark{--bg:#101c25;--paper:#1b2e3a;--ink:#f3f7f9;--muted:#c7d8df;--line:#54707f;--accent:#7adcf5;--soft:#203f4f;--warm:#4a3927;--good:#22483a;--bad:#57342f;--shadow:0 8px 26px #0005}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 Arial,Helvetica,sans-serif}main{max-width:1220px;margin:auto;padding:1rem 1.2rem 4rem}header,.panel,.sheet{background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:1.25rem;margin:0 0 1.2rem}header{border-top:8px solid var(--accent)}h1{font-size:clamp(2rem,3.5vw,3.15rem);line-height:1.12;margin:.25rem 0 .6rem}h2{font-size:clamp(1.55rem,2.5vw,2.2rem);line-height:1.2;margin:0 0 .7rem}h3{font-size:1.2rem;margin:.9rem 0 .4rem}p{margin:.45rem 0 .8rem}small,.muted{color:var(--muted)}strong{font-weight:750}.eyebrow{font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase;font-size:.86rem}.meta{font-size:1rem;color:var(--muted)}.controls,.nav,.row{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}.controls{margin-top:1rem}.nav{position:sticky;top:0;z-index:10;background:var(--bg);padding:.6rem 0;border-bottom:1px solid var(--line);margin:0 0 1.2rem}.nav a,.controls button,.controls select,.mini button{font:inherit;border:2px solid var(--line);background:var(--paper);color:var(--ink);border-radius:9px;padding:.48rem .72rem;cursor:pointer;text-decoration:none}.nav a:hover,button:hover{border-color:var(--accent)}button:focus-visible,select:focus-visible,a:focus-visible,textarea:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}button[aria-pressed=true]{background:var(--soft);border-color:var(--accent)}.panel{scroll-margin-top:5.2rem}.tag{font-size:.87rem;color:var(--muted);display:inline-block;margin-bottom:.3rem}.question{background:var(--soft);border-left:6px solid var(--accent);padding:1rem;border-radius:9px;margin:1rem 0}.warn{background:var(--warm);border-left:6px solid #b27600;padding:.85rem;border-radius:8px}.good{background:var(--good);border-left:6px solid #168355;padding:.85rem;border-radius:8px}.columns{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}.tile{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:1rem}.tile h3:first-child{margin-top:0}.step{display:flex;gap:.75rem;align-items:flex-start;margin:.75rem 0}.step b{background:var(--accent);color:var(--paper);border-radius:50%;width:2rem;height:2rem;display:grid;place-items:center;flex:none}.dark .step b{color:#10202a}.formula{background:var(--soft);padding:1rem;border-radius:9px;text-align:center;overflow-x:auto;font-size:1.15rem}.reading{font-size:.97rem;color:var(--muted)}.symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.6rem}.symbol-grid div{border:1px solid var(--line);padding:.65rem;border-radius:8px}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:560px}th,td{border:1px solid var(--line);padding:.55rem;text-align:left;vertical-align:top}th{background:var(--soft)}details{background:var(--soft);border:1px solid var(--line);border-radius:9px;padding:.5rem .75rem;margin:.55rem 0}summary{cursor:pointer;font-weight:700}details p{margin:.65rem 0}.solution{background:var(--good)}.hint{background:var(--warm)}textarea,input[type=text],input[type=number]{font:inherit;background:var(--paper);color:var(--ink);border:2px solid var(--line);border-radius:8px;padding:.6rem;width:100%}textarea{min-height:4.2rem;resize:vertical}.answer{margin:.55rem 0 1rem}.answer label{display:block;font-weight:700;margin-bottom:.35rem}.answer.short textarea{min-height:3rem}.line{border-bottom:1px solid var(--line);height:2.2rem}.sheet{scroll-margin-top:5.2rem}.sheet h2{border-bottom:2px solid var(--line);padding-bottom:.35rem}.item{border-top:1px solid var(--line);padding:.9rem 0}.item:first-of-type{border-top:0}.case{display:inline-flex;gap:.4rem;align-items:center;border:1px solid var(--line);padding:.4rem .6rem;border-radius:8px;background:var(--soft);margin:.3rem}.diagram{width:100%;height:auto;background:var(--paper);border:1px solid var(--line);border-radius:10px}.diagram text{fill:var(--ink);font:17px Arial}.diagram .charge-pos{fill:#cf4b32}.diagram .charge-neg{fill:#267ca8}.diagram .outline{stroke:var(--muted);stroke-width:3;fill:none}.diagram .arrow{stroke:var(--accent);stroke-width:4;fill:none;marker-end:url(#arrow)}.diagram .thin{stroke:var(--muted);stroke-width:2}.diagram .neutral{fill:var(--soft);stroke:var(--line)}.explorer{border:2px solid var(--accent);background:var(--soft);border-radius:12px;padding:1rem}.explorer label{display:block;font-weight:700}.explorer input[type=range]{width:100%;accent-color:var(--accent)}output{font-weight:700}.mini{font-size:.94rem}.dsa-only{display:none}.dsa-mode{font-family:Arial,sans-serif;font-size:1.13em;line-height:1.8;letter-spacing:.015em}.dsa-mode .dsa-only{display:block}.dsa-mode .item{max-width:75ch}.dsa-mode p,.dsa-mode li{max-width:80ch}body.zoom{font-size:21px}.print-meta{display:none}
+.sheet-dsa{display:none}.dsa-mode .sheet-dsa{display:block}.dsa-mode .sheet:not(.sheet-dsa){display:none}
+.sim-card{border:2px solid var(--accent);background:var(--soft);border-radius:14px;padding:1rem}.sim-card .launch{display:inline-block;background:var(--accent);color:#fff;border-radius:9px;padding:.65rem .9rem;text-decoration:none;font-weight:700;margin:.35rem 0 .7rem}.dark .sim-card .launch{color:#10202a}.sequence{counter-reset:simstep;list-style:none;padding:0}.sequence li{counter-increment:simstep;position:relative;padding:.35rem 0 .55rem 2.7rem}.sequence li::before{content:counter(simstep);position:absolute;left:0;top:.25rem;width:2rem;height:2rem;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-weight:700}.dark .sequence li::before{color:#10202a}.guided{border-top:5px solid var(--accent)}.source-note{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);padding-top:.5rem}
+.induction-sim{margin:1rem 0;border:2px solid var(--accent);background:var(--soft);border-radius:14px;padding:1rem;scroll-margin-top:5.2rem}.induction-stage{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden}.induction-stage svg{display:block;width:100%;height:auto;max-height:430px}.induction-stage text{fill:var(--ink);font:18px Arial}.induction-stage .sim-conductor{fill:var(--soft);stroke:var(--accent);stroke-width:5}.induction-stage .sim-rod{fill:#5b87a2;stroke:var(--ink);stroke-width:3;transition:transform .5s ease,opacity .3s ease}.induction-stage .sim-ground{fill:none;stroke:var(--muted);stroke-width:5}.induction-stage .sim-wire{fill:none;stroke:var(--accent);stroke-width:5}.induction-stage .sim-charge text{fill:#fff;font:bold 19px Arial;text-anchor:middle;dominant-baseline:middle}.induction-stage .sim-pos circle{fill:#cf4b32}.induction-stage .sim-neg circle{fill:#267ca8}.induction-stage .flow-dot{fill:#267ca8}.induction-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:.8rem 0}.induction-controls button{font:inherit;border:2px solid var(--line);background:var(--paper);color:var(--ink);border-radius:9px;padding:.5rem .8rem;cursor:pointer}.induction-controls button:disabled{opacity:.45;cursor:not-allowed}.induction-controls .primary{background:var(--accent);color:#fff;border-color:var(--accent)}.dark .induction-controls .primary{color:#10202a}.induction-status{background:var(--paper);border-left:6px solid var(--accent);padding:.8rem;border-radius:8px;min-height:4rem}.induction-wrong{background:var(--bad);border-left-color:#b94b3c}.induction-progress{font-weight:700;color:var(--accent)}
+@media(max-width:650px){main{padding:.7rem}.nav{position:static}.panel,.sheet,header{padding:.9rem}table{min-width:500px}}
+@media print{@page{size:A4;margin:16mm}html{scroll-behavior:auto}body,body.dark,body.dsa-mode{background:#fff!important;color:#000!important;font:11pt/1.35 Arial,sans-serif!important}main{max-width:none;padding:0}.controls,.nav,.panel,.explorer,.screen-only,details,button,.mini,.diagram{display:none!important}header{box-shadow:none;border:0;border-radius:0;padding:0;margin:0 0 8mm}header h1{font-size:15pt;margin:0}.eyebrow,.meta{color:#000!important}.print-meta{display:block}.sheet{display:block!important;box-shadow:none;border:0;border-radius:0;padding:0;margin:0 0 8mm;break-before:page}.sheet h2{font-size:15pt}.sheet h3{font-size:12pt}.sheet p,.sheet li{color:#000!important}.item{break-inside:avoid;padding:.45rem 0}.answer{margin:.35rem 0}.answer textarea,.answer input{display:none!important}.answer::after{content:"";display:block;height:32mm;border:1px solid #777;background:#fff}.answer.short::after{height:18mm}.line{border-color:#888}.print-answer-lines{display:block!important}.print-answer-lines .line{height:14mm}.sheet .warn,.sheet .good{background:#fff!important;border:1px solid #999;color:#000!important}.sheet .formula{background:#fff!important;color:#000!important}mjx-container{color:#000!important}.sheet .case{background:#fff!important;color:#000!important}.sheet .dsa-only{display:none!important}body.print-dsa .sheet:not(.sheet-dsa){display:none!important}body:not(.print-dsa) .sheet-dsa{display:none!important}body.print-dsa .sheet-dsa .dsa-only{display:block!important}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="eyebrow">Liceo Monti di Chieri · 2026-27 · Fisica · Unità 01</div>
+  <h1>La carica elettrica e la legge di Coulomb</h1>
+  <p class="meta"><span id="classLabel">5CLL · liceo linguistico</span> · Simulazioni → teoria → esercizi guidati · circa 4 incontri da 2 ore, adattabili</p>
+  <p class="print-meta">Classe: <span id="printClass">5CLL · liceo linguistico</span> &nbsp; Nome: ____________________ &nbsp; Data: ____________</p>
+  <div class="controls" role="group" aria-label="Controlli della LIM">
+    <label for="classSelect">Classe:</label><select id="classSelect"><option value="5CLL">5CLL · liceo linguistico</option><option value="5DSU">5DSU · scienze umane</option></select>
+    <button type="button" id="darkBtn" aria-pressed="false">Tema DARK</button>
+    <button type="button" id="dsaBtn" aria-pressed="false">Modalità DSA/BES</button>
+    <button type="button" id="zoomBtn" aria-pressed="false">Testo grande</button>
+    <button type="button" id="hintBtn" aria-pressed="false">Mostra aiuti</button>
+    <button type="button" id="solutionBtn" aria-pressed="false">Mostra soluzioni</button>
+    <button type="button" id="printBtn">Stampa schede vuote</button>
+  </div>
+</header>
+<nav class="nav" aria-label="Tappe dell'unità">
+  <a href="#sim-palloni">01 · Palloncini</a><a href="#sim-john">02 · John</a><a href="#avvio">03 · Evidenze</a><a href="#carica">04 · Carica</a><a href="#modi">05 · Elettrizzazione</a><a href="#induzione">Simulatore induzione</a><a href="#coulomb">06 · Coulomb</a><a href="#guidati">Esercizi guidati</a><a href="#formulario">Formulario</a><a href="#scheda-a">Scheda A</a><a href="#scheda-b">Scheda B</a><a href="#scheda-dsa">Scheda DSA/BES</a>
+</nav>
+<section class="panel sim-card" id="sim-palloni" aria-labelledby="sim-palloni-title">
+  <div class="tag">Incontro 1 · Prima di qualunque spiegazione teorica</div>
+  <h2 id="sim-palloni-title">01 · Laboratorio virtuale: palloncini ed elettricità statica</h2>
+  <p><a class="launch" href="https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_all.html?locale=it" target="_blank" rel="noopener noreferrer">Apri la simulazione PhET ↗</a></p>
+  <div class="question"><strong>Regola di lavoro:</strong> prima prevedi, poi muovi un solo elemento, infine descrivi ciò che cambia. Per ora non usare formule.</div>
+  <ol class="sequence">
+    <li><strong>Reset.</strong> Prima di attivare «Mostra tutte le cariche», prevedi quali oggetti siano neutri e che cosa potrebbe spostarsi.</li>
+    <li><strong>Rendi visibili le cariche.</strong> Disegna la situazione iniziale: maglione, palloncino e parete.</li>
+    <li><strong>Strofina un palloncino sul maglione.</strong> Segui le particelle che passano da un oggetto all'altro; non limitarti a dire «si carica».</li>
+    <li><strong>Avvicina il palloncino</strong> prima al maglione e poi alla parete. Registra somiglianze e differenze.</li>
+    <li><strong>Attiva il secondo palloncino.</strong> Strofina entrambi e avvicinali: prevedi prima il movimento.</li>
+  </ol>
+  <div class="columns"><div class="tile"><h3>Vedo…</h3><textarea aria-label="Osservazioni simulazione palloncini"></textarea></div><div class="tile"><h3>Penso che…</h3><textarea aria-label="Ipotesi simulazione palloncini"></textarea></div><div class="tile"><h3>Per verificare la mia idea potrei…</h3><textarea aria-label="Prova per verificare l'ipotesi sulla simulazione dei palloncini"></textarea></div></div>
+  <details class="hint"><summary>Aiuto per iniziare senza anticipare la teoria</summary><p>Nomina un cambiamento visibile: «Dopo lo strofinio vedo più simboli meno sul palloncino e meno sul maglione». Poi chiediti se le particelle positive si sono mosse.</p></details>
+</section>
+<section class="panel sim-card" id="sim-john" aria-labelledby="sim-john-title">
+  <div class="tag">Incontro 1 · Seconda simulazione, ancora prima della teoria</div>
+  <h2 id="sim-john-title">02 · Laboratorio virtuale: John Travoltage</h2>
+  <p><a class="launch" href="https://phet.colorado.edu/sims/html/john-travoltage/latest/john-travoltage_all.html?locale=it" target="_blank" rel="noopener noreferrer">Apri la simulazione PhET ↗</a></p>
+  <ol class="sequence">
+    <li><strong>Reset e previsione.</strong> Che cosa pensi accada strofinando il piede sul tappeto una sola volta?</li>
+    <li><strong>Strofina il piede.</strong> Segui il movimento delle particelle fra tappeto e corpo di John.</li>
+    <li><strong>Ripeti più volte.</strong> Confronta qualitativamente una passata e molte passate.</li>
+    <li><strong>Avvicina lentamente la mano alla maniglia.</strong> Nota quando avviene la scintilla e che cosa cambia subito dopo.</li>
+    <li><strong>Ripeti variando una sola azione.</strong> Completa la frase «Dalle nostre osservazioni possiamo dire che…» riferendoti all'accumulo e alla scarica.</li>
+  </ol>
+  <div class="question"><strong>Domande da portare alla teoria.</strong> Perché la carica si distribuisce sul corpo? Perché la scintilla avviene soltanto quando la mano è abbastanza vicina? Dove vanno gli elettroni durante la scarica?</div>
+  <div class="warn"><strong>Limite del modello:</strong> dimensioni, tempi e numero di particelle sono resi visibili ed enfatizzati. La simulazione aiuta a costruire un modello, non è una rappresentazione in scala.</div>
+  <div class="answer"><label for="john-rule">Dalle nostre osservazioni possiamo dire che…</label><textarea id="john-rule"></textarea></div>
+</section>
+<section class="panel" id="avvio" aria-labelledby="avvio-title">
+  <div class="tag">Incontro 1 · Solo dopo le due simulazioni</div>
+  <h2 id="avvio-title">03 · Dalle osservazioni alle domande di fisica</h2>
+  <div class="question"><strong>Domanda guida.</strong> Quali osservazioni delle due simulazioni richiedono una spiegazione comune? Che cosa è un dato del modello e che cosa è già un'interpretazione?</div>
+  <div class="columns">
+    <div class="tile"><h3>Trasferimento</h3><p>In quali passaggi hai visto particelle passare da un oggetto all'altro?</p><textarea aria-label="Evidenze di trasferimento"></textarea></div>
+    <div class="tile"><h3>Attrazione o repulsione</h3><p>Quali coppie si sono attratte? Quali respinte? La sola attrazione rivela il segno di entrambi?</p><textarea aria-label="Evidenze di attrazione e repulsione"></textarea></div>
+    <div class="tile"><h3>Accumulo e scarica</h3><p>Quale azione ha aumentato l'accumulo? Quale evento lo ha ridotto rapidamente?</p><textarea aria-label="Evidenze di accumulo e scarica"></textarea></div>
+  </div>
+  <details class="hint"><summary>Un esempio per iniziare una risposta aperta</summary><p>«Nella simulazione vedo il palloncino muoversi verso la parete; l'idea che la parete abbia carica netta sarebbe invece un'ipotesi da controllare.» È un possibile avvio, non una risposta obbligata.</p></details>
+  <div class="warn"><strong>Attenzione al linguaggio:</strong> «si muove verso» è un'osservazione; «ha sicuramente segno opposto» non segue dalla sola attrazione.</div>
+</section>
+<section class="panel" id="carica" aria-labelledby="carica-title">
+  <div class="tag">Incontro 1 · Dalle ipotesi al modello</div>
+  <h2 id="carica-title">04 · Che cos'è la carica elettrica?</h2>
+  <div class="columns">
+    <div class="tile"><h3>Due segni, una grandezza</h3><p>La carica elettrica \(q\) può essere <strong>positiva</strong> o <strong>negativa</strong>. La sua unità SI è il <strong>coulomb</strong> (C). Un corpo neutro ha carica totale nulla: non significa che sia privo di particelle cariche.</p><p>Protoni: \(+e\); elettroni: \(-e\); neutroni: 0. In un atomo neutro, protoni ed elettroni sono in ugual numero.</p></div>
+    <div class="tile"><h3>Chi si sposta?</h3><p>Nelle comuni elettrizzazioni di oggetti solidi sono gli <strong>elettroni</strong> a trasferirsi o ridistribuirsi; i protoni restano nei nuclei. Se un corpo guadagna elettroni, diventa negativo; se ne perde, positivo.</p><p>Lo strofinio non crea carica: in un sistema isolato la <strong>carica totale si conserva</strong>.</p></div>
+  </div>
+  <div class="formula">\[q_{\mathrm{tot},\,\mathrm{prima}}=q_{\mathrm{tot},\,\mathrm{dopo}}\]</div>
+  <p class="reading">Lettura: «La carica totale prima e dopo il trasferimento è la stessa, se il sistema è isolato».</p>
+  <h3>Schema: segni e forze</h3>
+  <svg class="diagram" viewBox="0 0 960 270" role="img" aria-label="Cariche opposte si attraggono; cariche uguali si respingono; un corpo neutro può essere attratto per polarizzazione">
+    <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M1 1 L10 6 L1 11 Z" fill="currentColor"/></marker></defs>
+    <text x="25" y="35">Segni opposti: attrazione</text><circle class="charge-pos" cx="92" cy="110" r="31"/><text x="84" y="117" fill="white" style="font-size:26px">+</text><circle class="charge-neg" cx="280" cy="110" r="31"/><text x="272" y="117" fill="white" style="font-size:26px">−</text><path class="arrow" d="M130 110 L172 110"/><path class="arrow" d="M243 110 L201 110"/>
+    <text x="350" y="35">Segni uguali: repulsione</text><circle class="charge-pos" cx="520" cy="110" r="31"/><text x="512" y="117" fill="white" style="font-size:26px">+</text><circle class="charge-pos" cx="700" cy="110" r="31"/><text x="692" y="117" fill="white" style="font-size:26px">+</text><path class="arrow" d="M484 110 L440 110"/><path class="arrow" d="M738 110 L784 110"/>
+    <text x="25" y="210">Un corpo neutro può essere attratto: la sola attrazione non ne rivela il segno.</text>
+  </svg>
+  <div class="good"><strong>Regola da ricordare:</strong> cariche di segno opposto si attraggono; cariche dello stesso segno si respingono.</div>
+  <details class="solution"><summary>Controlla due previsioni</summary><p>Un corpo che perde elettroni diventa positivo. Due cariche negative si respingono. L'attrazione di carta neutra non prova che la carta sia positiva o negativa.</p></details>
+  <details class="hint"><summary>Approfondimento facoltativo: carica elementare</summary><p>Il modulo della carica del protone e dell'elettrone è \(e\simeq1,60\times10^{-19}\,\mathrm C\). Per una carica netta composta da particelle, \(q=ne\) con \(n\) intero e segno incluso in \(n\).</p></details>
+</section>
+<section class="panel" id="modi" aria-labelledby="modi-title">
+  <div class="tag">Incontro 2 · Materiali e meccanismi</div>
+  <h2 id="modi-title">05 · Come si elettrizza un corpo?</h2>
+  <div class="columns">
+    <div class="tile"><h3>Conduttore</h3><p>Le cariche mobili possono spostarsi con facilità nel materiale. Un metallo è un esempio; se è isolato dall'ambiente, la carica può distribuirsi sulla sua superficie.</p></div>
+    <div class="tile"><h3>Isolante</h3><p>Le cariche non scorrono liberamente attraverso il materiale. Ciò non significa che non possa caricarsi o polarizzarsi: un palloncino di plastica ne è un esempio.</p></div>
+  </div>
+  <div class="tablewrap"><table><thead><tr><th>Meccanismo</th><th>Il corpo carico tocca l'altro?</th><th>Che cosa accade?</th><th>Carica netta persistente?</th></tr></thead><tbody>
+    <tr><td><strong>Strofinio</strong></td><td>Sì, mentre i corpi vengono strofinati.</td><td>Elettroni possono passare da uno all'altro.</td><td>Possibile, con segni opposti per i due corpi nel sistema isolato.</td></tr>
+    <tr><td><strong>Contatto</strong></td><td>Sì.</td><td>Carica può trasferirsi a un corpo, soprattutto se conduttore.</td><td>Possibile.</td></tr>
+    <tr><td><strong>Polarizzazione</strong></td><td>No.</td><td>Le cariche si ridistribuiscono o le molecole si orientano.</td><td>No, se non c'è trasferimento: la carica totale resta nulla.</td></tr>
+    <tr><td><strong>Induzione con terra</strong></td><td>No con l'oggetto carico; sì con la terra.</td><td>Cariche entrano/escono tramite messa a terra; poi si scollega.</td><td>Sì, se la terra si scollega prima di allontanare l'oggetto carico.</td></tr>
+  </tbody></table></div>
+  <div class="question"><strong>Discussione.</strong> Un oggetto carico attrae un pezzetto di carta neutra. Quale riga della tabella permette di spiegarlo senza dire che la carta ha già una carica netta?</div>
+  <details class="hint"><summary>Aiuto 1 · Disegna «prima / durante / dopo»</summary><p>Scrivi prima la carica totale della carta. Poi separa nel disegno la zona vicina e quella lontana dall'oggetto carico. Chiediti se è avvenuto un trasferimento fra oggetti.</p></details>
+  <details class="solution"><summary>Una spiegazione possibile</summary><p>La carta inizialmente neutra può polarizzarsi: le cariche di segno opposto risultano in media più vicine al palloncino; l'attrazione prevale senza che la carta acquisisca necessariamente carica netta.</p></details>
+  <h3>Schema sequenziale: caricare per induzione</h3>
+  <div class="columns">
+    <div class="tile"><div class="step"><b>1</b><p>Avvicina un corpo carico a un <strong>conduttore neutro</strong>, senza toccarlo.</p></div></div>
+    <div class="tile"><div class="step"><b>2</b><p>Collega temporaneamente il conduttore alla <strong>terra</strong>, mantenendo vicino il corpo carico.</p></div></div>
+    <div class="tile"><div class="step"><b>3</b><p><strong>Scollega la terra prima</strong> di allontanare il corpo carico.</p></div></div>
+    <div class="tile"><div class="step"><b>4</b><p>Allontana il corpo carico. Il conduttore può conservare una carica netta.</p></div></div>
+  </div>
+  <p class="reading">Senza il passaggio con la terra, il semplice avvicinamento dà polarizzazione, non una carica netta permanente nel conduttore.</p>
+  <div class="induction-sim screen-only" id="induzione" aria-labelledby="induzione-title">
+    <div class="tag">Simulazione interattiva · una sfera metallica e una bacchetta negativa</div>
+    <h3 id="induzione-title">Missione: carica la sfera senza toccarla</h3>
+    <p>Usa <strong>Avanti</strong> e osserva elettroni, collegamento a terra e ordine delle azioni. I simboli mostrano un modello qualitativo, non il numero reale di cariche.</p>
+    <div class="induction-stage">
+      <svg viewBox="0 0 900 390" role="img" aria-labelledby="indSvgTitle indSvgDesc">
+        <title id="indSvgTitle">Elettrizzazione per induzione con collegamento a terra</title>
+        <desc id="indSvgDesc">Una bacchetta negativa si avvicina a una sfera conduttrice, gli elettroni si ridistribuiscono e possono uscire attraverso il collegamento a terra.</desc>
+        <g id="indRod" class="sim-rod">
+          <rect x="55" y="70" width="105" height="215" rx="28"></rect>
+          <text x="107" y="45" text-anchor="middle">bacchetta negativa</text>
+          <text x="82" y="112">−</text><text x="122" y="112">−</text><text x="82" y="170">−</text><text x="122" y="170">−</text><text x="82" y="228">−</text><text x="122" y="228">−</text>
+        </g>
+        <circle class="sim-conductor" cx="500" cy="175" r="112"></circle>
+        <text x="500" y="35" text-anchor="middle">sfera conduttrice</text>
+        <g id="indCharges" aria-hidden="true"></g>
+        <g id="indGround">
+          <path class="sim-wire" d="M588 245 C655 270 665 300 665 325"></path>
+          <path class="sim-ground" d="M665 325 V345 M625 345 H705 M638 360 H692 M650 375 H680"></path>
+          <text x="730" y="355">terra</text>
+          <circle id="indFlow1" class="flow-dot" cx="620" cy="270" r="11"></circle>
+          <circle id="indFlow2" class="flow-dot" cx="653" cy="310" r="11"></circle>
+        </g>
+        <text id="indNetLabel" x="500" y="330" text-anchor="middle">carica netta: zero</text>
+      </svg>
+    </div>
+    <div class="induction-controls" role="group" aria-label="Controlli simulazione induzione">
+      <button type="button" id="indPrev">← Indietro</button>
+      <button type="button" class="primary" id="indNext">Avanti →</button>
+      <button type="button" id="indWrong">Prova l'ordine sbagliato</button>
+      <button type="button" id="indReset">Ricomincia</button>
+      <span class="induction-progress" id="indProgress">Passaggio 0 di 4</span>
+    </div>
+    <div class="induction-status" id="indStatus" aria-live="polite"></div>
+    <details class="hint"><summary>La domanda decisiva</summary><p>Perché bisogna scollegare la terra <strong>prima</strong> di allontanare la bacchetta?</p></details>
+    <details class="solution"><summary>Controllo</summary><p>Se la bacchetta viene allontanata mentre la sfera è ancora collegata a terra, la causa che respingeva gli elettroni scompare e gli elettroni possono rientrare dalla terra: la sfera tende a tornare neutra.</p></details>
+  </div>
+</section>
+<section class="panel" id="coulomb" aria-labelledby="coulomb-title">
+  <div class="tag">Incontri 3–4 · Dal modello al calcolo</div>
+  <h2 id="coulomb-title">06 · La legge di Coulomb: quanto è intensa la forza elettrica?</h2>
+  <div class="question"><strong>Prima della formula.</strong> Se due cariche restano le stesse, ma la distanza raddoppia, la forza si dimezza, diventa un quarto, o resta uguale? Confronta con ciò che ricordi della gravitazione.</div>
+  <h3>Legge di Coulomb</h3>
+  <div class="formula">\[F=k\frac{|q_1q_2|}{r^2}\qquad k\simeq8,99\times10^9\,\frac{\mathrm{N\,m^2}}{\mathrm{C^2}}\]</div>
+  <p class="reading"><strong>Lettura verbale:</strong> «La <strong>legge di Coulomb</strong> afferma che il modulo della forza elettrostatica è \(k\), la <strong>costante di Coulomb</strong>, per il prodotto dei moduli delle cariche, diviso il quadrato della distanza».</p>
+  <div class="columns"><div class="tile"><h3>Quando vale?</h3><p>Per due cariche <strong>puntiformi e ferme</strong> in vuoto. In aria, il valore di \(k\) del vuoto è spesso una buona approssimazione per esercizi semplici. La forza è diretta lungo la retta che unisce le cariche.</p></div><div class="tile"><h3>Modulo ≠ verso</h3><p>La formula con i moduli dà \(F\ge 0\). Segni <strong>opposti → attrazione</strong>; segni <strong>uguali → repulsione</strong>. Le forze sui due corpi hanno stesso modulo e versi opposti.</p></div></div>
+  <div class="tablewrap"><table><thead><tr><th>Distanza</th><th>Quadrato della distanza</th><th>Forza, cariche fisse</th></tr></thead><tbody><tr><td>\(r\)</td><td>\(r^2\)</td><td>\(F\)</td></tr><tr><td>\(2r\)</td><td>\(4r^2\)</td><td>\(F/4\)</td></tr><tr><td>\(3r\)</td><td>\(9r^2\)</td><td>\(F/9\)</td></tr></tbody></table></div>
+  <div class="explorer screen-only" aria-label="Esplora la legge di Coulomb">
+    <h3>Esplora: cambia le cariche e la distanza</h3><p>Questo modello calcola solo il modulo e il tipo di interazione. Non sostituisce una misura sperimentale.</p>
+    <div class="columns"><div><label for="q1">\(q_1\): <output id="q1Out">+2,0</output> µC</label><input type="range" id="q1" min="-5" max="5" step="0.5" value="2"></div><div><label for="q2">\(q_2\): <output id="q2Out">−3,0</output> µC</label><input type="range" id="q2" min="-5" max="5" step="0.5" value="-3"></div><div><label for="dist">Distanza: <output id="distOut">0,30</output> m</label><input type="range" id="dist" min="0.10" max="1.00" step="0.05" value="0.30"></div></div>
+    <p aria-live="polite"><strong>Modello:</strong> <output id="forceOut">0,60 N</output> · <output id="typeOut">attrazione</output></p>
+  </div>
+  <div class="columns"><div class="tile"><h3>Confronto con la gravità</h3><p>Entrambe le leggi hanno una dipendenza \(1/r^2\) per corpi puntiformi. La gravità fra masse è sempre attrattiva; l'elettricità può essere attrattiva o repulsiva. Massa e carica non sono la stessa grandezza.</p></div><div class="tile"><h3>Ponte al campo elettrico</h3><p>Questa legge descrive la forza tra due cariche. La prossima domanda è: «Come descrivere l'azione di una carica nello spazio prima di porre una seconda carica?» Questo porta al concetto di campo elettrico.</p></div></div>
+  <details class="hint"><summary>Aiuto 1 · Per il calcolo numerico</summary><p>Prima converti le cariche da µC a C: \(1\,\mu\mathrm C=10^{-6}\,\mathrm C\). Poi calcola \(r^2\). Usa i moduli per il numero e i segni per il verso.</p></details>
+  <details class="solution"><summary>Esempio svolto · Due cariche opposte</summary><p>Con \(q_1=+2,0\,\mu\mathrm C\), \(q_2=-3,0\,\mu\mathrm C\), \(r=0,30\,\mathrm m\): \(F=8,99\times10^9\cdot(2,0\times10^{-6})(3,0\times10^{-6})/(0,30)^2\simeq0,60\,\mathrm N\). La forza è attrattiva. A \(0,60\,\mathrm m\), il modulo diventa circa \(0,15\,\mathrm N\).</p></details>
+</section>
+<section class="panel guided" id="guidati" aria-labelledby="guidati-title">
+  <div class="tag">Da risolvere insieme alla LIM · difficoltà crescente</div>
+  <h2 id="guidati-title">Esercizi guidati: dalla carica alla forza</h2>
+  <p>Per ogni esercizio: <strong>comprendi → scegli i dati → pianifica → calcola → controlla</strong>. Apri un aiuto solo quando il gruppo ne ha bisogno; apri la soluzione dopo il confronto.</p>
+  <div class="item">
+    <h3>G1 · Quanti elettroni sono stati rimossi?</h3>
+    <p>Una moneta inizialmente neutra assume carica \(+2,4\,\mu\mathrm C\). Quanti elettroni sono stati rimossi? Usa \(e=1,60\times10^{-19}\,\mathrm C\).</p>
+    <div class="answer"><label for="g1">Dati, formula, calcolo e interpretazione del segno</label><textarea id="g1"></textarea></div>
+    <details class="hint"><summary>Aiuto 1 · Che cosa significa il segno positivo?</summary><p>Una carica positiva corrisponde a una perdita di elettroni. Converti prima \(\mu\mathrm C\) in C.</p></details>
+    <details class="hint"><summary>Aiuto 2 · Relazione</summary><p>Il numero di elettroni è \(n=|q|/e\). Il risultato deve essere un numero puro.</p></details>
+    <details class="solution"><summary>Soluzione controllata</summary><p>\(n=(2,4\times10^{-6})/(1,60\times10^{-19})=1,5\times10^{13}\). Sono stati <strong>rimossi</strong> \(1,5\times10^{13}\) elettroni.</p></details>
+    <p class="source-note">Adattato dal testo, p. 152, esercizio 1.</p>
+  </div>
+  <div class="item">
+    <h3>G2 · Quattro sfere identiche a contatto</h3>
+    <p>Quattro sfere metalliche identiche hanno cariche \(+1,6\,\mu\mathrm C\), \(+6,2\,\mu\mathrm C\), \(-4,8\,\mu\mathrm C\), \(-9,4\,\mu\mathrm C\). Vengono messe tutte a contatto e poi separate. Trova la carica finale di ciascuna e il numero di elettroni in eccesso o in difetto.</p>
+    <div class="answer"><label for="g2">Somma, divisione, segno e numero di elettroni</label><textarea id="g2"></textarea></div>
+    <details class="hint"><summary>Aiuto 1 · Conservazione e simmetria</summary><p>Somma algebricamente le quattro cariche. Sfere identiche, poste insieme nelle stesse condizioni, condividono la carica totale in parti uguali.</p></details>
+    <details class="hint"><summary>Aiuto 2 · Dal coulomb agli elettroni</summary><p>Dopo aver diviso per quattro, usa \(n=|q_f|/e\) e interpreta il segno di \(q_f\).</p></details>
+    <details class="solution"><summary>Soluzione controllata</summary><p>\(Q_\mathrm{tot}=1,6+6,2-4,8-9,4=-6,4\,\mu\mathrm C\). Quindi \(q_f=Q_\mathrm{tot}/4=-1,6\,\mu\mathrm C\). Ogni sfera ha \(1,0\times10^{13}\) elettroni in <strong>eccesso</strong>.</p></details>
+    <p class="source-note">Adattato dal testo, p. 152, esercizio 6.</p>
+  </div>
+  <div class="item">
+    <h3>G3 · Cambia soltanto la distanza</h3>
+    <p>Due cariche si attraggono con forza \(1,5\,\mathrm N\). La distanza diventa un nono di quella iniziale, mentre le cariche non cambiano. Qual è il nuovo modulo della forza?</p>
+    <div class="answer short"><label for="g3">Rapporto fra le forze</label><textarea id="g3"></textarea></div>
+    <details class="hint"><summary>Aiuto 1 · Scrivi la nuova distanza</summary><p>\(r'=r/9\). Con cariche fisse, \(F'/F=r^2/(r')^2\).</p></details>
+    <details class="solution"><summary>Soluzione controllata</summary><p>\(F'/F=r^2/(r/9)^2=81\). Quindi \(F'=81\cdot1,5\,\mathrm N=121,5\,\mathrm N\), cioè circa \(1,2\times10^2\,\mathrm N\). Resta attrattiva.</p></details>
+    <p class="source-note">Adattato dal testo, p. 153, esercizio 10.</p>
+  </div>
+  <div class="item">
+    <h3>G4 · Trasferire elettroni e poi applicare Coulomb</h3>
+    <p>Due piccole sfere neutre distano \(0,50\,\mathrm m\). Si trasferiscono \(3,0\times10^{13}\) elettroni da una sfera all'altra. Trova carica, modulo e tipo di forza.</p>
+    <div class="answer"><label for="g4">Cariche delle sfere, formula di Coulomb e verso</label><textarea id="g4"></textarea></div>
+    <details class="hint"><summary>Aiuto 1 · Prima trova le cariche</summary><p>Usa \(|q|=ne\). La sfera che perde elettroni diventa positiva; quella che li riceve diventa negativa. I moduli sono uguali.</p></details>
+    <details class="hint"><summary>Aiuto 2 · Poi la forza</summary><p>Sostituisci \(q_1=+q\), \(q_2=-q\) e \(r=0,50\,\mathrm m\) nella formula del modulo.</p></details>
+    <details class="solution"><summary>Soluzione controllata</summary><p>\(|q|=(3,0\times10^{13})(1,60\times10^{-19})=4,8\times10^{-6}\,\mathrm C\). \(F=8,99\times10^9(4,8\times10^{-6})^2/(0,50)^2\simeq0,83\,\mathrm N\). Segni opposti: forza <strong>attrattiva</strong>.</p></details>
+    <p class="source-note">Adattato dal testo, p. 153, esercizio 12.</p>
+  </div>
+</section>
+<section class="panel" id="formulario" aria-labelledby="formulario-title">
+  <div class="tag">Sintesi consultabile durante l'unità</div><h2 id="formulario-title">Formulario e parole chiave</h2>
+  <div class="symbol-grid"><div><strong>\(q\)</strong> · carica elettrica · unità C</div><div><strong>\(F\)</strong> · modulo della forza elettrostatica · unità N</div><div><strong>\(r\)</strong> · distanza tra le due cariche · unità m</div><div><strong>\(k\)</strong> · <strong>costante di Coulomb</strong>, cioè costante di proporzionalità nel vuoto · \(8,99\times10^9\,\mathrm{N\,m^2/C^2}\)</div></div>
+  <p><strong>Nome della legge:</strong> legge di Coulomb, per la forza elettrostatica tra due cariche puntiformi ferme.</p>
+  <div class="formula">\[F=k\frac{|q_1q_2|}{r^2}\qquad 1\,\mu\mathrm C=10^{-6}\,\mathrm C\qquad r\to ar\;\Longrightarrow\;F\to\frac{F}{a^2}\]</div>
+  <p class="reading">Leggi a voce: «Se la distanza è moltiplicata per \(a\), il modulo della forza si divide per \(a^2\), a cariche invariate».</p>
+  <div class="columns"><div class="good"><strong>Segni:</strong> opposti → attrazione; uguali → repulsione.</div><div class="good"><strong>Conservazione:</strong> la carica si trasferisce, non si crea nello strofinio.</div><div class="warn"><strong>Non confondere:</strong> corpo neutro ≠ privo di cariche; polarizzazione ≠ carica netta; modulo ≠ verso.</div></div>
+</section>
+<section class="sheet" id="scheda-a" aria-labelledby="scheda-a-title">
+  <div class="tag screen-only">Scheda operativa · incontri 1–2</div><h2 id="scheda-a-title">Scheda A · Osservare, spiegare, distinguere</h2>
+  <p>Nome: __________________________ &nbsp; Data: ________________ &nbsp; Indica se scrivi un'<strong>osservazione</strong>, un'<strong>ipotesi</strong> o una <strong>previsione</strong>.</p>
+  <div class="item"><h3>A1 · Simulazione «Palloncini ed elettricità statica»</h3><p>Registra una previsione e un'osservazione per: (a) palloncino strofinato e maglione; (b) palloncino strofinato e parete; (c) due palloncini strofinati. Indica quali particelle hai visto trasferirsi.</p><div class="answer"><label for="a1">Previsioni, osservazioni e particelle</label><textarea id="a1"></textarea></div><details class="hint"><summary>Aiuto progressivo</summary><p>Comincia con «prima prevedo…; dopo vedo…». Separa il movimento degli oggetti dal movimento delle particelle rappresentate.</p></details><details class="solution"><summary>Una risposta possibile</summary><p>Gli elettroni passano dal maglione al palloncino; palloncino e maglione si attraggono, il palloncino è attratto dalla parete polarizzata, due palloncini caricati allo stesso modo si respingono.</p></details></div>
+  <div class="item"><h3>A1 bis · Simulazione «John Travoltage»</h3><p>Confronta una e molte passate del piede sul tappeto. Poi descrivi che cosa accade avvicinando la mano alla maniglia e subito dopo la scintilla. Distingui osservazione e spiegazione.</p><div class="answer"><label for="a1b">Accumulo, distanza e scarica</label><textarea id="a1b"></textarea></div><details class="solution"><summary>Controllo</summary><p>Nel modello gli elettroni passano dal tappeto a John e l'eccesso aumenta con lo strofinio. Quando la mano è abbastanza vicina, avviene una scarica verso la maniglia e l'eccesso diminuisce.</p></details></div>
+  <div class="item"><h3>A2 · Un atomo e due corpi</h3><p>Descrivi un atomo neutro. Se un corpo guadagna elettroni, che segno assume? Se li perde? Che cosa succede alla carica totale dei due corpi, considerati come sistema isolato?</p><div class="answer"><label for="a2">Disegno o spiegazione</label><textarea id="a2"></textarea></div><details class="hint"><summary>Aiuto progressivo</summary><p>Conta protoni ed elettroni. Poi pensa a dove vanno gli elettroni quando uno dei due corpi li perde.</p></details><details class="solution"><summary>Controllo</summary><p>Atomo neutro: ugual numero di protoni ed elettroni. Guadagnare elettroni → segno negativo; perderli → positivo. La carica totale dei due corpi si conserva se il sistema è isolato.</p></details></div>
+  <div class="item"><h3>A3 · Versi e indizi</h3><p>Disegna le forze per \((+, -)\), \((+, +)\), \((-,-)\). Un corpo carico attrae carta neutra: puoi dedurre il segno della carta?</p><div class="answer"><label for="a3">Frecce e motivazione</label><textarea id="a3"></textarea></div><details class="solution"><summary>Controllo</summary><p>\((+, -)\) si attraggono; \((+, +)\) e \((-,-)\) si respingono. La carta neutra può essere attratta per polarizzazione: il suo segno non è deducibile dalla sola attrazione.</p></details></div>
+  <div class="item"><h3>A4 · Quattro meccanismi</h3><p>Per ogni caso, indica se avviene strofinio, contatto, polarizzazione o induzione con terra. Specifica se c'è trasferimento di carica tra corpi e se resta una carica netta.</p><ol><li>Due oggetti vengono strofinati tra loro.</li><li>Un conduttore neutro tocca un conduttore carico.</li><li>Un corpo carico è solo avvicinato a carta neutra.</li><li>Un corpo carico è avvicinato a un conduttore messo a terra e poi scollegato prima di allontanarlo.</li></ol><div class="answer"><label for="a4">Tabella o elenco motivato</label><textarea id="a4"></textarea></div><details class="hint"><summary>Aiuto progressivo</summary><p>Chiediti prima: «c'è contatto?» Poi: «gli elettroni passano fra corpi, si ridistribuiscono soltanto o possono passare tramite la terra?»</p></details><details class="solution"><summary>Controllo</summary><p>1 strofinio: trasferimento possibile. 2 contatto: trasferimento possibile. 3 polarizzazione: ridistribuzione, non carica netta necessaria. 4 induzione con terra: carica netta possibile se l'ordine è corretto.</p></details></div>
+  <div class="item"><h3>A5 · La sequenza da ordinare</h3><p>Scrivi in ordine le quattro azioni per caricare un conduttore per induzione: scollegare la terra; allontanare il corpo carico; avvicinare il corpo carico; collegare a terra.</p><div class="answer short"><label for="a5">Ordine e motivo del passaggio decisivo</label><textarea id="a5"></textarea></div><details class="solution"><summary>Controllo</summary><p>Avvicinare → collegare a terra → scollegare la terra → allontanare. La terra va scollegata prima dell'allontanamento.</p></details></div>
+</section>
+<section class="sheet" id="scheda-b" aria-labelledby="scheda-b-title">
+  <div class="tag screen-only">Scheda operativa · incontri 3–4</div><h2 id="scheda-b-title">Scheda B · Prevedere, calcolare, argomentare</h2>
+  <p>Nome: __________________________ &nbsp; Data: ________________ &nbsp; Per ogni forza distingui <strong>modulo</strong>, <strong>direzione</strong> e <strong>verso</strong>.</p>
+  <p><strong>Legge di Coulomb:</strong> \(F=k|q_1q_2|/r^2\). La lettera \(k\) indica la <strong>costante di Coulomb</strong>, cioè la costante di proporzionalità nel vuoto.</p>
+  <div class="item"><h3>B1 · Se cambia la distanza</h3><p>Alla distanza \(r\), il modulo è \(F\). Completa: a \(2r\) è ________; a \(3r\) è ________. Se una sola carica raddoppia, a distanza fissa, il modulo è ________. Spiega senza calcolare un valore assoluto.</p><div class="answer short"><label for="b1">Ragionamento</label><textarea id="b1"></textarea></div><details class="hint"><summary>Aiuto progressivo</summary><p>Quale parte della formula cambia? Scrivi il nuovo quadrato della distanza prima di confrontare i due moduli.</p></details><details class="solution"><summary>Controllo</summary><p>A \(2r\): \(F/4\); a \(3r\): \(F/9\). Se una sola carica raddoppia e la distanza resta fissa, il modulo raddoppia.</p></details></div>
+  <div class="item"><h3>B2 · Disegna entrambe le forze</h3><p>Per \((+, -)\) e \((+, +)\), traccia una freccia su ciascun corpo. Indica se le frecce sono lungo la stessa retta, quale verso hanno e come si confrontano i moduli.</p><div class="answer"><label for="b2">Disegno e parole</label><textarea id="b2"></textarea></div><details class="solution"><summary>Controllo</summary><p>Le forze sono lungo la congiungente, con moduli uguali e versi opposti. Per segni opposti puntano l'una verso l'altra; per segni uguali puntano via l'una dall'altra.</p></details></div>
+  <div class="item"><h3>B3 · Confronto con la gravità</h3><p>Scrivi una somiglianza e una differenza tra la forza gravitazionale e la forza elettrica. Specifica quando il confronto \(1/r^2\) è valido.</p><div class="answer short"><label for="b3">Somiglianza, differenza e modello</label><textarea id="b3"></textarea></div><details class="solution"><summary>Controllo</summary><p>Nel modello di masse/cariche puntiformi entrambe diminuiscono come \(1/r^2\). La gravità fra masse è attrattiva; la forza elettrica può essere anche repulsiva.</p></details></div>
+  <div class="item"><h3>B4 · Un caso numerico</h3><p>\(q_1=+2,0\,\mu\mathrm C\), \(q_2=-3,0\,\mu\mathrm C\), \(r=0,30\,\mathrm m\), \(k=8,99\times10^9\,\mathrm{N\,m^2/C^2}\). Converti le unità, calcola il <strong>modulo</strong>, indica il <strong>verso</strong>. Poi prevedi il nuovo modulo a \(0,60\,\mathrm m\), senza ripetere tutto il calcolo.</p><div class="answer"><label for="b4">Conversioni, formula, risultato, verso</label><textarea id="b4"></textarea></div><details class="hint"><summary>Aiuto 1 · Scomponi</summary><p>1. Converti µC in C. 2. Calcola \(r^2\). 3. Sostituisci i moduli. 4. Usa i segni solo per il verso. 5. Raddoppia la distanza.</p></details><details class="solution"><summary>Soluzione controllata</summary><p>\(|q_1|=2,0\times10^{-6}\,\mathrm C\), \(|q_2|=3,0\times10^{-6}\,\mathrm C\), \(r^2=0,090\,\mathrm{m^2}\). \(F\simeq0,60\,\mathrm N\); i segni opposti danno attrazione. A \(0,60\,\mathrm m\), \(F\simeq0,15\,\mathrm N\).</p></details></div>
+  <div class="item"><h3>B5 · Una domanda nuova</h3><p>Quale tua ipotesi è cambiata durante l'unità? Quale nuova domanda ti viene prima di studiare il campo elettrico?</p><div class="answer short"><label for="b5">Revisione e domanda</label><textarea id="b5"></textarea></div><details class="hint"><summary>Un esempio per iniziare</summary><p>«Pensavo che ogni attrazione provasse una carica opposta; ora vorrei sapere…». Puoi scegliere un'altra idea.</p></details></div>
+</section>
+<section class="sheet sheet-dsa" id="scheda-dsa" aria-labelledby="scheda-dsa-title">
+  <div class="tag screen-only">Scheda alternativa · consegne brevi e passaggi numerati</div><h2 id="scheda-dsa-title">Scheda DSA/BES · Un passo alla volta</h2>
+  <p>Nome: __________________________ &nbsp; Data: ________________ &nbsp; Puoi usare disegni, parole brevi o una spiegazione orale.</p>
+  <div class="item"><h3>1 · Le due simulazioni, un passo alla volta</h3><p>(1) Nei palloncini: scrivi che cosa prevedi. (2) Segui gli elettroni durante lo strofinio. (3) Osserva palloncino–parete e due palloncini. (4) In John: confronta una e molte passate. (5) Avvicina la mano alla maniglia e descrivi la scarica.</p><div class="answer"><label for="d1">Previsione, tre osservazioni e una domanda</label><textarea id="d1"></textarea></div><details class="hint"><summary>Aiuto</summary><p>Usa frasi brevi: «vedo…», «gli elettroni vanno da… a…», «dopo la scintilla…».</p></details></div>
+  <div class="item"><h3>2 · Segui gli elettroni</h3><p>(1) Disegna un atomo neutro. (2) Scrivi il segno di un corpo che guadagna elettroni. (3) Scrivi il segno di uno che li perde. (4) Indica se la carica totale del sistema isolato cambia.</p><div class="answer"><label for="d2">Disegno e quattro risposte</label><textarea id="d2"></textarea></div><details class="solution"><summary>Controllo</summary><p>Atomo neutro: protoni ed elettroni in ugual numero. Guadagna elettroni → negativo. Li perde → positivo. La carica totale del sistema isolato si conserva.</p></details></div>
+  <div class="item"><h3>3 · Segni e corpo neutro</h3><p>(1) Disegna le frecce per \((+, -)\) e \((+, +)\). (2) La carta neutra può essere attratta? (3) La sola attrazione ne rivela il segno?</p><div class="answer"><label for="d3">Frecce e spiegazione</label><textarea id="d3"></textarea></div><details class="hint"><summary>Aiuto</summary><p>La <strong>polarizzazione</strong> ridistribuisce cariche in un corpo neutro senza cambiare necessariamente la sua carica totale.</p></details><details class="solution"><summary>Controllo</summary><p>\((+, -)\): attrazione; \((+, +)\): repulsione. La carta neutra può essere attratta; il suo segno non si deduce.</p></details></div>
+  <div class="item"><h3>4 · Non confondere i meccanismi</h3><p>Scrivi che cosa avviene nello <strong>strofinio</strong>, nel <strong>contatto</strong> e nel <strong>solo avvicinamento</strong>. Poi ordina: avvicinare il corpo carico; collegare a terra; scollegare la terra; allontanare il corpo carico.</p><div class="answer"><label for="d4">Tre confronti e una sequenza</label><textarea id="d4"></textarea></div><details class="solution"><summary>Controllo</summary><p>Strofinio e contatto possono trasferire carica; solo avvicinamento può polarizzare. Per induzione con terra: avvicinare → collegare → scollegare → allontanare.</p></details></div>
+  <div class="item"><h3>5 · Leggi la legge di Coulomb</h3><div class="formula">\[F=k\frac{|q_1q_2|}{r^2}\]</div><p class="reading">Lettura: «Nella <strong>legge di Coulomb</strong>, il modulo della forza è \(k\), la <strong>costante di Coulomb</strong>, per il prodotto dei moduli delle cariche, diviso il quadrato della distanza».</p><p>(1) Se \(r\to2r\), scrivi \(r^2\to\) ________. (2) Scrivi \(F\to\) ________. (3) Per \((+, -)\) scegli attrazione o repulsione: ________.</p><div class="answer short"><label for="d5">Perché?</label><textarea id="d5"></textarea></div><details class="solution"><summary>Controllo</summary><p>\(r^2\to4r^2\), quindi \(F\to F/4\). Segni opposti: attrazione.</p></details></div>
+  <div class="item"><h3>6 · Un calcolo in cinque passi</h3><p>\(q_1=+2,0\,\mu\mathrm C\), \(q_2=-3,0\,\mu\mathrm C\), \(r=0,30\,\mathrm m\), \(k=8,99\times10^9\,\mathrm{N\,m^2/C^2}\). Ricorda \(1\,\mu\mathrm C=10^{-6}\,\mathrm C\).</p><ol><li>Converti le due cariche in C.</li><li>Calcola \(r^2\).</li><li>Sostituisci i <strong>moduli</strong> nella formula.</li><li>Scrivi il risultato in N e usa i segni per il verso.</li><li>Se la distanza raddoppia, trova il nuovo modulo.</li></ol><div class="answer"><label for="d6">Cinque passi</label><textarea id="d6"></textarea></div><details class="hint"><summary>Aiuto</summary><p>Non mettere un modulo negativo. Il segno di \(q_2\) serve a decidere se la forza attrae o respinge.</p></details><details class="solution"><summary>Soluzione controllata</summary><p>\(2,0\times10^{-6}\,\mathrm C\); \(3,0\times10^{-6}\,\mathrm C\); \(0,090\,\mathrm{m^2}\); \(F\simeq0,60\,\mathrm N\), attrazione; a distanza doppia \(F\simeq0,15\,\mathrm N\).</p></details></div>
+  <div class="item"><h3>7 · Una frase tua</h3><p>Completa o disegna: «La sola attrazione di un corpo neutro non dimostra __________________, perché __________________».</p><div class="answer short"><label for="d7">La tua spiegazione</label><textarea id="d7"></textarea></div></div>
+</section>
+<section class="panel" id="uscita" aria-labelledby="uscita-title"><div class="tag">Chiusura di ogni incontro</div><h2 id="uscita-title">Exit ticket · Cosa abbiamo capito?</h2><ol><li>Un corpo carico attrae carta neutra. Cosa puoi concludere e cosa non puoi concludere?</li><li>Se la distanza fra due cariche raddoppia, cosa accade al modulo della forza? Perché?</li><li>Quale differenza fondamentale separa forza elettrica e gravitazionale?</li></ol><div class="answer"><label for="exit">La mia risposta più solida e una domanda ancora aperta</label><textarea id="exit"></textarea></div><details class="solution"><summary>Controllo essenziale</summary><p>La sola attrazione non rivela il segno della carta, che può polarizzarsi. A distanza doppia la forza è un quarto. La gravità fra masse attrae sempre; l'elettricità può attrarre o respingere.</p></details></section>
+</main>
+<script>
+(() => {
+  const body=document.body;
+  const select=document.getElementById('classSelect');
+  const updateClass=()=>{const label=select.options[select.selectedIndex].textContent;document.getElementById('classLabel').textContent=label;document.getElementById('printClass').textContent=label};
+  select.addEventListener('change',updateClass);
+  const toggle=(id,cls,onText,offText)=>{const btn=document.getElementById(id);btn.addEventListener('click',()=>{const on=body.classList.toggle(cls);btn.setAttribute('aria-pressed',String(on));btn.textContent=on?onText:offText})};
+  toggle('darkBtn','dark','Tema CHIARO','Tema DARK');toggle('dsaBtn','dsa-mode','Modalità standard','Modalità DSA/BES');toggle('zoomBtn','zoom','Testo normale','Testo grande');
+  const reveal=(id,selector,onText,offText)=>{const btn=document.getElementById(id);btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-pressed')!=='true';document.querySelectorAll(selector).forEach(d=>d.open=open);btn.setAttribute('aria-pressed',String(open));btn.textContent=open?onText:offText})};
+  reveal('hintBtn','details.hint','Nascondi aiuti','Mostra aiuti');reveal('solutionBtn','details.solution','Nascondi soluzioni','Mostra soluzioni');
+  const fmt=(v,d=1)=>new Intl.NumberFormat('it-IT',{minimumFractionDigits:d,maximumFractionDigits:d}).format(v);
+  const signed=v=>v>0?'+'+fmt(v):v<0?'−'+fmt(Math.abs(v)):fmt(0);
+  const sliders=['q1','q2','dist'].map(id=>document.getElementById(id));
+  const updateExplorer=()=>{const [q1,q2,r]=sliders.map(s=>Number(s.value));document.getElementById('q1Out').textContent=signed(q1);document.getElementById('q2Out').textContent=signed(q2);document.getElementById('distOut').textContent=fmt(r,2);const f=8.99e9*Math.abs(q1*q2)*1e-12/(r*r);document.getElementById('forceOut').textContent=fmt(f,2)+' N';document.getElementById('typeOut').textContent=q1===0||q2===0?'forza nulla nel modello':q1*q2<0?'attrazione':'repulsione'};
+  sliders.forEach(s=>s.addEventListener('input',updateExplorer));updateExplorer();
+  const indStates=[
+    {title:'Sfera neutra',text:'La sfera contiene cariche positive e negative in equilibrio: la sua carica netta è zero.',rod:false,ground:false,net:'carica netta: zero',charges:[[435,125,'+'],[475,105,'−'],[530,110,'+'],[565,145,'−'],[445,205,'−'],[485,235,'+'],[535,225,'−'],[570,195,'+']]},
+    {title:'1 · Avvicina la bacchetta negativa',text:'Gli elettroni mobili della sfera sono respinti verso il lato lontano. La sfera si polarizza, ma è ancora complessivamente neutra.',rod:true,ground:false,net:'carica netta: zero · sfera polarizzata',charges:[[420,125,'+'],[425,175,'+'],[430,225,'+'],[535,115,'−'],[565,150,'−'],[565,205,'−']]},
+    {title:'2 · Collega la sfera a terra',text:'La bacchetta continua a respingere gli elettroni: alcuni escono dalla sfera e raggiungono la terra attraverso il filo. Nella sfera resta un difetto di elettroni.',rod:true,ground:true,net:'carica netta: positiva',charges:[[420,120,'+'],[425,170,'+'],[430,220,'+'],[495,225,'+'],[555,155,'−']]},
+    {title:'3 · Scollega prima la terra',text:'Ora gli elettroni non possono più rientrare. La sfera conserva una carica netta positiva mentre la bacchetta è ancora vicina.',rod:true,ground:false,net:'carica netta: positiva · terra scollegata',charges:[[420,120,'+'],[425,170,'+'],[430,220,'+'],[480,235,'+'],[540,215,'+']]},
+    {title:'4 · Allontana la bacchetta',text:'Senza la bacchetta, la carica positiva rimasta si ridistribuisce sulla superficie. La sfera è stata caricata senza essere toccata dalla bacchetta.',rod:false,ground:false,net:'carica netta finale: positiva',charges:[[500,80,'+'],[565,115,'+'],[585,185,'+'],[545,245,'+'],[465,255,'+'],[415,195,'+'],[430,125,'+']]}
+  ];
+  const indRod=document.getElementById('indRod'),indGround=document.getElementById('indGround'),indCharges=document.getElementById('indCharges'),indNetLabel=document.getElementById('indNetLabel'),indStatus=document.getElementById('indStatus'),indProgress=document.getElementById('indProgress'),indPrev=document.getElementById('indPrev'),indNext=document.getElementById('indNext'),indWrong=document.getElementById('indWrong');
+  let indStep=0,indWrongMode=false;
+  const drawCharge=(x,y,sign)=>{const ns='http://www.w3.org/2000/svg';const g=document.createElementNS(ns,'g');g.setAttribute('class','sim-charge '+(sign==='+'?'sim-pos':'sim-neg'));const c=document.createElementNS(ns,'circle');c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r','16');const t=document.createElementNS(ns,'text');t.setAttribute('x',x);t.setAttribute('y',y+1);t.textContent=sign;g.append(c,t);indCharges.appendChild(g)};
+  const renderInduction=()=>{
+    const s=indStates[indStep];
+    indCharges.replaceChildren();
+    const charges=indWrongMode?indStates[0].charges:s.charges;
+    charges.forEach(c=>drawCharge(...c));
+    indRod.style.transform=(s.rod&&!indWrongMode)?'translateX(0)':'translateX(-190px)';
+    indRod.style.opacity=(s.rod&&!indWrongMode)?'1':'0';
+    indGround.style.display=(s.ground||indWrongMode)?'block':'none';
+    indNetLabel.textContent=indWrongMode?'carica netta: torna a zero':s.net;
+    indProgress.textContent='Passaggio '+indStep+' di 4';
+    indStatus.classList.toggle('induction-wrong',indWrongMode);
+    indStatus.innerHTML=indWrongMode?'<strong>Ordine sbagliato.</strong> Hai allontanato la bacchetta mentre la terra era ancora collegata: gli elettroni possono rientrare e la sfera torna neutra.':'<strong>'+s.title+'.</strong> '+s.text;
+    indPrev.disabled=indStep===0;
+    indNext.disabled=indStep===4||indWrongMode;
+    indNext.textContent=indStep===3?'Completa →':'Avanti →';
+    indWrong.disabled=indStep!==2||indWrongMode;
+  };
+  indPrev.addEventListener('click',()=>{if(indWrongMode){indWrongMode=false}else{indStep=Math.max(0,indStep-1)}renderInduction()});
+  indNext.addEventListener('click',()=>{indStep=Math.min(4,indStep+1);indWrongMode=false;renderInduction()});
+  indWrong.addEventListener('click',()=>{indWrongMode=true;renderInduction()});
+  document.getElementById('indReset').addEventListener('click',()=>{indStep=0;indWrongMode=false;renderInduction()});
+  renderInduction();
+  let snapshot=null;
+  const preparePrint=()=>{if(snapshot)return;snapshot={details:[...document.querySelectorAll('details')].map(d=>d.open),fields:[...document.querySelectorAll('textarea,input[type=text]')].map(f=>f.value),dsa:body.classList.contains('dsa-mode')};document.querySelectorAll('details').forEach(d=>d.open=false);document.querySelectorAll('textarea,input[type=text]').forEach(f=>f.value='');body.classList.toggle('print-dsa',snapshot.dsa)};
+  const restorePrint=()=>{if(!snapshot)return;[...document.querySelectorAll('details')].forEach((d,i)=>d.open=snapshot.details[i]);[...document.querySelectorAll('textarea,input[type=text]')].forEach((f,i)=>f.value=snapshot.fields[i]);body.classList.remove('print-dsa');snapshot=null};
+  window.addEventListener('beforeprint',preparePrint);window.addEventListener('afterprint',restorePrint);
+  document.getElementById('printBtn').addEventListener('click',async()=>{try{if(window.MathJax?.typesetPromise)await window.MathJax.typesetPromise()}catch(e){console.warn('Formule non ancora elaborate',e)}preparePrint();window.print()});
+})();
+</script>
+</body>
+</html>
